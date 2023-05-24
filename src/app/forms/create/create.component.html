@@ -1,0 +1,17 @@
+<form [formGroup]="formCreate" (ngSubmit)="submit()">
+  <input
+    type="text"
+    formControlName="name"
+    class="border w-full py-2 px-4 mb-2"
+    placeholder="Введите имя"
+  >
+  <p
+    class="text-red-600 font-mono mb-2"
+    *ngIf = "name.errors && name.touched"
+  >Минимальная длина 6. Сейчас: {{ name.value.length }}</p>
+  <button
+    type="submit"
+    class="py-2 px-4 bg-blue-600 text-white font-mono">
+    Создать
+  </button>
+</form>
