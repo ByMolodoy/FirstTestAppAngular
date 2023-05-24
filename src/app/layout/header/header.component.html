@@ -1,0 +1,16 @@
+<div class="flex w-full h-auto mb-2 py-2 px-4 bg-blue-200">
+  <div class="">
+    <h1>Beauty</h1>
+  </div>
+  <div>
+  </div>
+
+<button *ngIf="isLogin" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" (click)="login()">
+  Войти
+</button>
+
+<button *ngIf="!isLogin" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" (click)="registration()">
+  Регистрация
+</button>
+
+</div>

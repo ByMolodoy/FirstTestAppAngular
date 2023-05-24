@@ -1,0 +1,5 @@
+<app-layout></app-layout>
+<app-modal *ngIf="modalService.isVisible$ | async" [title]="appToLoad">
+  <app-create *ngIf="appToLoad == 'Регистрация'"></app-create>
+
+</app-modal>
